@@ -1,29 +1,23 @@
 
 import './App.css';
 
+// 컴포넌트 불러오기
+import Home from "./pages/Home";
+import ProductDetail from './pages/ProductDetail';
+import Basket from './pages/Basket';
+
 import React, { Component } from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-  
-    <div className="App">
-        <BrowserRouter basename="comento-shop">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter basename="comento-shop">
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/product/:productId" element={<ProductDetail/>}/>
+        <Route path="/basket" element={<Basket/>}/>
+      </Routes>
+    </BrowserRouter>
 
   );
 }
