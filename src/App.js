@@ -3,19 +3,21 @@ import './App.css';
 
 // 컴포넌트 불러오기
 import Home from "./pages/Home";
-import ProductDetail from './pages/ProductDetail';
+import Goods from './pages/Goods';
 import Basket from './pages/Basket';
+import Gallery from './pages/Gallery';
 
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter basename="comento-shop">
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/product/:productId" element={<ProductDetail/>}/>
-        <Route path="/basket" element={<Basket/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/goods" element={<Goods />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/basket" element={<Basket />} />
       </Routes>
     </BrowserRouter>
 
