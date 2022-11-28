@@ -63,20 +63,15 @@ function BackToTopAppBar(props) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <AppBar>
-                <Toolbar>
+            <AppBar >
+                <Toolbar >
                     <Typography variant="h5" component="div" >
-                        iflego30280
+                        LEGO ARTWORK GALLERY
                     </Typography>
                 </Toolbar>
             </AppBar>
             <Toolbar id="back-to-top-anchor" />
-            <Container>
-                {/* 여기에 프로필 */}
-                <Box sx={{ my: 2 }}>
-                    <p>profile</p>
-                </Box>
-            </Container>
+
             <ScrollTop {...props}>
                 <Fab size="small" aria-label="scroll back to top">
                     <KeyboardArrowUpIcon />

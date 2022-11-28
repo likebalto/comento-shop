@@ -27,7 +27,7 @@ function GoodsList() {
     return (
         <>
             <Box sx={{ width: '100%', mt: 2 }}>
-                <Typography variant="h5" >Goods</Typography>
+                {/* <Typography variant="h5" >Goods</Typography> */}
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Grid item xs={4}>
                         <Item><img src={stamp1} width="100%" /></Item>
