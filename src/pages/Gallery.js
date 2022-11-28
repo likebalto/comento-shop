@@ -1,5 +1,5 @@
 // components
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import BackToTopAppBar from "../components/BackToTopAppBar";
 
 // mui
 import { Container } from "@mui/system";
@@ -111,7 +111,7 @@ function TitlebarBelowImageList() {
 function Gallery() {
     return (
         <>
-            <ResponsiveAppBar />
+            <BackToTopAppBar />
             <Container>
                 <TitlebarBelowImageList />
             </Container>

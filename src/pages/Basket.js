@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // components
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import BackToTopAppBar from "../components/BackToTopAppBar";
 
 // mui
 import { Container } from "@mui/system";
@@ -14,7 +14,7 @@ import basket from "../images/etc/basket.jpg";
 function Basket() {
     return (
         <>
-            <ResponsiveAppBar />
+            <BackToTopAppBar />
             <Container>
                 <Typography variant="h6" sx={{ textAlign: "center", mt: 20 }}>장바구니가 비어있네요!</Typography>
                 <Typography variant="h4" sx={{ textAlign: "center", mt: 1 }}>쇼핑하러가볼까요?</Typography>

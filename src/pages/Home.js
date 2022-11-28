@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import { galleryList } from "../data/mockData";
 
 // components
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import BackToTopAppBar from "../components/BackToTopAppBar";
 import GalleryList from "../components/GalleryList";
 import GoodsList from "../components/GoodsList";
 
@@ -19,7 +20,7 @@ import mainImg from "../images/etc/mainImg.jpg";
 function Home() {
     return (
         <>
-            <ResponsiveAppBar />
+            <BackToTopAppBar />
             <Container>
                 <Box height="150px" position="relative" backgroundSize="cover" backgroundPosition="center center" overflow="hidden" sx={{ mt: 1 }}>
 
@@ -27,9 +28,21 @@ function Home() {
                 </Box>
 
                 {/* Gallery자리 */}
-                <Link to="/gallery" style={{ textDecoration: 'none' }}>
+                <Link to="/goods" style={{ textDecoration: 'none' }}>
+                    {/* <Typography variant="h5">Gallery</Typography>
+
+                    {galleryList.map((gallery) => (
+                        <>
+                            <div>{gallery.id}</div>
+                            <div>{gallery.name}</div>
+                            <div>{gallery.copyright}</div>
+                            <div>{gallery.thumbnail}</div>
+                        </>
+                    ))} */}
+
                     <GalleryList />
                 </Link>
+
 
                 {/* Goods자리 */}
                 <Link to="/goods" style={{ textDecoration: 'none' }}>

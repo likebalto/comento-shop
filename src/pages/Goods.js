@@ -1,5 +1,5 @@
 // components
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import BackToTopAppBar from "../components/BackToTopAppBar";
 
 // mui
 import { color, Container } from "@mui/system";
@@ -154,7 +154,7 @@ function TitlebarBelowImageList() {
 function Goods() {
     return (
         <>
-            <ResponsiveAppBar />
+            <BackToTopAppBar />
             <Container>
                 <TitlebarBelowImageList />
                 <Box width="100%" sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
