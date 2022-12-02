@@ -3,6 +3,7 @@ import * as React from 'react';
 // components
 import GalleryList from './GalleryList';
 import GoodsList from './GoodsList';
+import Basket from '../pages/Basket';
 
 // mui
 import PropTypes from 'prop-types';
@@ -83,7 +84,7 @@ function MenuTabs() {
                 <GoodsList />
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
-                Basket
+                <Basket />
             </TabPanel>
 
         </Box>
