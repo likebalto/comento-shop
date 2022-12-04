@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import * as storage from "../utils/storage";
+import { useState, useEffect } from "react";
+
 
 // components
 import BackToTopAppBar from "../components/BackToTopAppBar";
@@ -10,8 +13,17 @@ import { Typography, Button, Box } from "@mui/material";
 // images
 import basket from "../images/etc/basket.jpg";
 
-
 function Basket() {
+
+    const [basketItems, setBasketItems] = useState();
+
+    useEffect(() => {
+        const items = storage.getBasketItems();
+        setBasketItems(items);
+        console.log(items);
+    }, []);
+
+
     return (
         <>
             <BackToTopAppBar />

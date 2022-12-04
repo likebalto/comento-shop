@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-// components
-import GalleryList from './GalleryList';
-import GoodsList from './GoodsList';
+// pages
 import Basket from '../pages/Basket';
+import Gallery from '../pages/Gallery';
+import Goods from '../pages/Goods';
 
 // mui
 import PropTypes from 'prop-types';
@@ -78,10 +78,10 @@ function MenuTabs() {
             </AppBar>
 
             <TabPanel value={value} index={0} dir={theme.direction}>
-                <GalleryList />
+                <Gallery />
             </TabPanel>
             <TabPanel value={value} index={1} dir={theme.direction}>
-                <GoodsList />
+                <Goods />
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
                 <Basket />
